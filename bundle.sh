@@ -1,0 +1,2 @@
+D_BUNDLE_NAME='configs'
+D_BUNDLE_VERSION='0.0.0'
