@@ -2,7 +2,7 @@
 #:author:       Grove Pyree
 #:email:        grayarea@protonmail.ch
 #:revdate:      2019.12.03
-#:revremark:    Extend config-hyper to Linux & WSL
+#:revremark:    On macOS install hyper config to home directory
 #:created_at:   2019.06.30
 
 D_DPL_NAME='config-hyperjs'
@@ -13,7 +13,7 @@ D_DPL_WARNING=
 D_DPL_OS=( macos linux wsl )
 
 case $D__OS_FAMILY in
-  macos)      d__queue_target "$HOME/Library/Application Support/Hyper";;
+  macos)      d__queue_target "$HOME";;
   linux|wsl)  d__queue_target "$HOME/.config/Hyper";;
 esac
 
